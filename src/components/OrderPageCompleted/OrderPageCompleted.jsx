@@ -5,7 +5,7 @@ export default function OrderCompleted() {
   return (
     <div>
       <img src="./Assets/mile1-assets/logo.svg" alt="" />
-      ananın
+      deneme
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React from "react";
 
 function OrderPage() {
-  return <div>ananın</div>;
+  return <div>deneme</div>;
 }
 
 export default OrderPage;
