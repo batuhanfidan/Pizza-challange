@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 export default function homePage() {
   let history = useHistory();
   const sendClick = () => {
-    history.push("/orderPage");
+    history.push("/OrderPage");
   };
   return (
     <>

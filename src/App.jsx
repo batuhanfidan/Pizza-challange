@@ -11,13 +11,10 @@ export default function App() {
       <Route exact path="/">
         <HomePage />
       </Route>
-      <Route path="/order">
+      <Route path="/OrderPage">
         <OrderPage />
       </Route>
-      <Route path="/completed">
-        <OrderPage />
-      </Route>
-      <Route path="/completed">
+      <Route path="/OrderCompleted">
         <OrderCompleted />
       </Route>
     </Router>
