@@ -18,8 +18,9 @@ function MainOrder() {
   const sendClick = () => {
     history.push("/OrderCompleted");
   };
+  const pizzaPrice = 85.5;
 
-  const [price, setPrice] = useState(85.5);
+  const [price, setPrice] = useState([pizzaPrice]);
   const [piece, setPiece] = useState(1);
   const [selectedIngredients, setSelectedIngredients] = useState([]);
 
