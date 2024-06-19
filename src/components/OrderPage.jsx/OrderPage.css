@@ -6,8 +6,115 @@
     justify-content: center;
 }
 
+.nasi {
+    display: flex;
+    justify-content: center;
+    height: 140vh;
+    margin-top: 20px;
+}
+
 .order-container {
     width: 600px;
     height: 100vh;
-    background-color: black;
+    font-family: "Barlow";
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.fiyat-yorum {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.secenekler {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+
+.onay-formu {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.artı-eksi {
+    display: flex;
+}
+
+.artı-eksi button {
+    width: 47px;
+    height: 56px;
+    border: none;
+    border-radius: 
+    6px 0px 0px 6px;
+    background-color: #FDC913;
+}
+.artı-eksi p  {
+    width: 47px;
+    height: 56px;
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tamamlandi {
+    width: 386px;
+    height: 197px;
+    border: 1px solid rgba(128, 128, 128, 0.521);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: 50px;
+   
+}
+
+
+.tamamlandi div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+
+.tamamlandi-button {
+    width: 386px;
+    height: 62px;
+    border: none;
+    border-radius: 6px;
+    background-color: #FDC913;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 56px;
+}
+
+.not {
+    width: 100%;
+    border: 1 px solid;
+    border-color: rgba(128, 128, 128, 0.295);
+    height: 56px;
+    border-radius: 6px;
+}
+
+.dumduz {
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.329);
+    height: 0;
+}
+
+.siparis-notu{
+    margin-top: 50px;
 }
