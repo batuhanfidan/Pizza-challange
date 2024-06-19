@@ -18,9 +18,8 @@ function MainOrder() {
   const sendClick = () => {
     history.push("/OrderCompleted");
   };
-  const pizzaPrice = 85.5;
 
-  const [price, setPrice] = useState([pizzaPrice]);
+  const [price, setPrice] = useState(85.5);
   const [piece, setPiece] = useState(1);
   const [selectedIngredients, setSelectedIngredients] = useState([]);
 
@@ -267,15 +266,7 @@ function MainOrder() {
           </div>
         </div>
         <div className="siparis-notu">
-          <p
-            style={{
-              fontWeight: "600",
-              fontSize: "20px",
-              lineHeight: "24.76px",
-            }}
-          >
-            Sipariş Notu
-          </p>
+          <p>Sipariş Notu</p>
           <input
             type="text"
             className="not"
