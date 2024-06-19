@@ -1,0 +1,13 @@
+.header {
+    background-color: #CE2829;
+    height: 207px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-container {
+    width: 600px;
+    height: 100vh;
+    background-color: black;
+}
