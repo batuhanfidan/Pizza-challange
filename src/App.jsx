@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import HomePage from "./components/HomePage/HomePage";
-import OrderPage from "./components/OrderPage.jsx/OrderPage";
+import OrderPage from "./components/OrderPage/OrderPage";
 import "./App.css";
 import OrderCompleted from "./components/OrderPageCompleted/OrderPageCompleted";
 
