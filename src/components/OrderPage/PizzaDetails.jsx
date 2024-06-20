@@ -15,7 +15,8 @@ function PizzaDetails({ price }) {
         <div
           style={{ display: "flex", alignItems: "center", fontSize: "16px" }}
         >
-          4.9 (200)
+          <div style={{ paddingRight: "100px" }}>4.9</div>
+          (200)
         </div>
       </div>
       <div>

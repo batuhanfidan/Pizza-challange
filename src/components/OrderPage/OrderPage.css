@@ -9,7 +9,7 @@
 .nasi {
     display: flex;
     justify-content: center;
-    height: 140vh;
+    height: 110vh;
     margin-top: 20px;
 }
 
@@ -29,8 +29,6 @@
     display: flex;
     justify-content: space-between;
 }
-
-
 
 .secenekler {
     width: 100%;
@@ -92,14 +90,11 @@
    
 }
 
-
 .tamamlandi div {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
-
-
 
 .tamamlandi-button {
     width: 386px;
