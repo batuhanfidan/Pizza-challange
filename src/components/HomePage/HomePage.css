@@ -11,7 +11,7 @@
 
 .logo {
     position: absolute;
-    top: 11%;
+    top:7%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; 
@@ -30,13 +30,14 @@
     font-family: "Roboto Condensed";
     font-weight: 300;
     line-height: 92px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .promp p {
     margin: 0;
 }
-
-
 
 .aciktim {
     position: absolute;

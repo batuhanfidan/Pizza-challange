@@ -1,0 +1,173 @@
+.secenekler-div {
+    height: 102px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Barlow";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32.4px;
+}
+
+.options {
+    width: 1285px;
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.options span {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 10rem;
+}
+
+.secenekler span p {
+    margin: 0;
+    text-align: center;
+    height: fit-content;
+}
+
+.uclu-foto {
+    width: 1300px;
+    height: 535.75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.uclu-foto-first  {
+    background-image: url("../Assets/mile2-aseets/cta/kart-1.png");
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    width: 636px; 
+    height: 100%;
+}
+
+.uclu-foto-second  {
+    background-image: url("../Assets/mile2-aseets/cta/kart-2.png");
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    background-size: 100% 100%;
+}
+
+.uclu-foto-third {
+    background-image: url("../Assets/mile2-aseets/cta/kart-3.png");
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    background-size: 100% 100%;
+}
+
+.uclu-foto-first div button {
+    border: none;
+    border-radius: 50px;
+    color: red;
+    text-align: center;
+    width: 132px;
+    height: 48px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.uclu-foto-second div button {
+    border: none;
+    border-radius: 50px;
+    color: red;
+    text-align: center;
+    width: 132px;
+    height: 48px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.uclu-foto-third div button {
+    border: none;
+    border-radius: 50px;
+    color: red;
+    text-align: center;
+    width: 132px;
+    height: 48px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.paketlenenler {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.yazilar:first-child{
+    font-family: "Satisfy";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44.27px;
+    text-align: center;
+    color: #CE2829;
+}
+
+.paket-buton {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.paket-buton button {
+    width: 186px;
+    height: 80px;
+    border: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: white
+}
+
+.paket-buton button p {
+    margin: 0;
+    font-family: "Barlow";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32.4px;
+    
+}
+
+.paket-buton :hover {
+    background-color:#292929;
+    color: white;
+}
+
+.pizza {
+    width: 1320px;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pizza-item {
+    display: flex;
+    flex-direction: column;
+    width: 416px;
+    height: 400px;
+    border: none;
+    padding: 0;
+    border-radius: 12px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pizza-image {
+    width: 306px;
+    height: 306px;
+}
+
+.pizza-name {
+    font-family: "Barlow";
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 29.44px;
+}
+
+
+

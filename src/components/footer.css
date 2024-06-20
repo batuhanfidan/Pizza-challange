@@ -1,0 +1,75 @@
+.footer{
+    background-color: #1A1A1A;
+    color: white;
+    height: 561.25px;
+    font-family: "Barlow";
+}
+
+.footer-first-div {
+    height: 471.45px;
+    display: flex;
+}
+
+.footer-last-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #ffffff15
+}
+
+.copyright {
+    width: 1320px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.instagram {
+    width: 306px;
+    height: 291.7px;
+}
+
+.instagram-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instagram img {
+    width: 94.5px;
+    height: 94.5px;
+    border-radius: 3px;
+    padding: 0 10px 10px 0;
+}
+
+.instagram p {
+    line-height: 32.11px;
+    height: 500;
+    font-size: 24px;
+    margin-bottom: 3rem;
+}
+
+.adress span {
+    display: flex;
+    gap: 5px;
+}
+
+.adress {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 50px;
+}
+
+.adress span img {
+    height: 28px;
+}
+
+.footer-pizza-hot p {
+    line-height: 32.4px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.footer-pizza-hot {
+    margin-top: 50px;
+}
