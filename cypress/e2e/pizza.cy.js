@@ -40,7 +40,7 @@ describe("MainOrder Component", () => {
   });
 
   it("should select pizza size", () => {
-    const pizzaSize = "Büyük";
+    const pizzaSize = "M";
 
     cy.get('input[type="radio"][value="' + pizzaSize + '"]').check();
 
@@ -65,7 +65,7 @@ describe("MainOrder Component", () => {
 
     cy.get('select[name="Hamur Kalınlığı"]').select("İnce");
 
-    cy.get('input[type="radio"][value="Büyük"]').check();
+    cy.get('input[type="radio"][value="M"]').check();
 
     cy.get(".tamamlandi-button").click({ force: true });
 

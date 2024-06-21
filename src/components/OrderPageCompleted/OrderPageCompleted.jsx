@@ -44,7 +44,13 @@ export default function OrderCompleted() {
             <p>SİPARİŞ ALINDI</p>
           </div>
         </div>
-        <div className="cizgi"></div>
+        <div
+          style={{
+            border: "1px solid #FAF7F2",
+            width: "30%",
+            marginTop: "50px",
+          }}
+        ></div>
         <div
           style={{
             color: "#FFFFFF",
@@ -87,11 +93,11 @@ export default function OrderCompleted() {
               </span>
             </p>
             <p>
-              Ek Malzemeler:{" "}
+              Ek Malzemeler:
               <span style={{ fontWeight: "600" }}>
-                {obje.selectedIngredients.join(", ")}{" "}
+                {obje.selectedIngredients.join(", ")}
                 <span style={{ color: "red" }}>*</span>
-              </span>{" "}
+              </span>
             </p>
           </div>
           <div

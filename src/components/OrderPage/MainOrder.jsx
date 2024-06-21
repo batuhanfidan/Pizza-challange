@@ -59,6 +59,10 @@ function MainOrder() {
   const totalPrice = (price + selectedIngredients.length * 5) * piece;
 
   const sendClick = () => {
+    if (!size) {
+      return <p>Lütfen bir boyut seçiniz</p>;
+    }
+
     if (selectedIngredients.length < minIngredients) {
       alert(`En az ${minIngredients} malzeme seçmelisiniz.`);
       return;
@@ -87,7 +91,7 @@ function MainOrder() {
 
   return (
     <>
-      <div className="gereksiz" style={{ width: "100%", height: "650px" }}>
+      <div className="gereksiz" style={{ width: "100%", height: "580px" }}>
         <img src="Assets/mile2-aseets/pictures/form-banner.png" alt="Banner" />
       </div>
       <div className="nasi" style={{ marginTop: "-280px" }}>
@@ -97,14 +101,14 @@ function MainOrder() {
             style={{
               display: "flex",
               justifyContent: "space-between",
-              width: "400px",
-              marginTop: "20px",
+              width: "600px",
+              marginTop: "30px",
             }}
           >
             <SizeSelector handleSizeChange={handleSizeChange} />
             <DoughSelector handleDoughChange={handleDoughChange} />
           </div>
-          <div>
+          <div style={{ marginTop: "50px" }}>
             <p style={{ fontSize: "20px", fontWeight: "600" }}>Ek Malzemeler</p>
             <p style={{ fontSize: "16px", fontWeight: "500" }}>
               En fazla {maxIngredients} malzeme seçebilirsiniz. 5₺
@@ -121,16 +125,30 @@ function MainOrder() {
               value={orderName}
               onChange={handleOrderNameChange}
               style={{
+                backgroundColor: "#FAF7F2",
                 border: "1px solid gray",
                 marginBottom: "10px",
                 borderRadius: "5px",
+                border: "none",
+                height: "40px",
+                paddingLeft: "20px",
               }}
             />
-            <p>Sipariş Notu</p>
+            <p
+              style={{
+                fontWeight: "600",
+                fontSize: "20px",
+                lineHeight: "24.76px",
+                marginTop: "16px",
+              }}
+            >
+              Sipariş Notu
+            </p>
             <input
               type="text"
               className="not"
               placeholder="Siparişine eklemek istediğin bir not var mı?"
+              style={{ paddingLeft: "20px" }}
             />
           </div>
           <div className="cizgi"></div>

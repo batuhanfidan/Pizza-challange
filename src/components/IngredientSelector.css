@@ -1,0 +1,87 @@
+.seceneklerr {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
+    grid-auto-flow: column; 
+  }
+  
+  .cbx-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .cbx {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border-radius: 6px;
+    vertical-align: middle;
+    transition: background 0.1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    background-color: #FAF7F2;
+  }
+  
+  .cbx:after {
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 20px;
+    top: 8px;
+    opacity: 0;
+    transform: rotate(45deg) scale(0);
+    border-right: 4px solid #000000;
+    border-bottom: 4px solid #000000;
+    transition: all 0.3s ease;
+    transition-delay: 0.15s;
+  }
+  
+  .hidden-xs-up {
+    display: none !important;
+  }
+  
+  .ctnr {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="checkbox"]:checked + .cbx-label .cbx {
+    border-color: transparent;
+    background: #FDC913;
+    animation: jelly 0.6s ease;
+  }
+  
+  input[type="checkbox"]:checked + .cbx-label .cbx:after {
+    opacity: 1;
+    transform: rotate(45deg) scale(1);
+  }
+  
+  @keyframes jelly {
+    from {
+      transform: scale(1, 1);
+    }
+    30% {
+      transform: scale(1.25, 0.75);
+    }
+    40% {
+      transform: scale(0.75, 1.25);
+    }
+    50% {
+      transform: scale(1.15, 0.85);
+    }
+    65% {
+      transform: scale(0.95, 1.05);
+    }
+    75% {
+      transform: scale(1.05, 0.95);
+    }
+    to {
+      transform: scale(1, 1);
+    }
+  }
+  

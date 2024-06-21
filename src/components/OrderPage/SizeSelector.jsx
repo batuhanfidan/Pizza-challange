@@ -1,30 +1,50 @@
-import React from "react";
-import { FormGroup, Input, Label } from "reactstrap";
+import React, { useState } from "react";
+import "./SizeSelector.css";
 
 function SizeSelector({ handleSizeChange }) {
+  const [sizeSelected, setSizeSelected] = useState(false);
+
+  const handleRadioChange = (event) => {
+    handleSizeChange(event);
+    setSizeSelected(true);
+  };
+
   return (
-    <FormGroup tag="fieldset">
-      <legend
-        style={{
-          display: "flex",
-          fontSize: "20px",
-          fontWeight: "600",
-        }}
-      >
-        Boyut seç <p style={{ color: "red" }}>*</p>
-      </legend>
-      {["Küçük", "Orta", "Büyük"].map((size) => (
-        <FormGroup check style={{ marginBottom: "20px" }} key={size}>
-          <Input
-            name="radio1"
-            type="radio"
-            value={size}
-            onChange={handleSizeChange}
-          />{" "}
-          <Label check>{size}</Label>
-        </FormGroup>
-      ))}
-    </FormGroup>
+    <div>
+      <span>
+        <p
+          style={{
+            display: "flex",
+            fontSize: "20px",
+            fontWeight: "600",
+            marginLeft: "6px",
+          }}
+        >
+          Boyutunu Seç <span style={{ color: "red" }}>*</span>
+        </p>
+      </span>
+      <div className="radio-inputs">
+        {["S", "M", "L"].map((size) => (
+          <label key={size} className={`radio-label ${size.toLowerCase()}`}>
+            <input
+              className="radio-input"
+              type="radio"
+              name="engine"
+              value={size}
+              onChange={handleRadioChange}
+            />
+            <span className="radio-tile">
+              <span className="radio-icon">{size}</span>
+            </span>
+          </label>
+        ))}
+      </div>
+      {!sizeSelected && (
+        <p style={{ color: "red", margin: "0" }}>
+          Lütfen bir malzeme seçiniz.*
+        </p>
+      )}
+    </div>
   );
 }
 

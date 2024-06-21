@@ -4,6 +4,12 @@ function PizzaDetails({ price, name }) {
   return (
     <>
       <div className="information">
+        <div style={{ fontWeight: "500" }}>
+          <p style={{ color: "#5F5F5F", marginBottom: "30px" }}>
+            Anasayfa -{" "}
+            <span style={{ color: "#CE2829" }}> Sipariş Oluştur</span>
+          </p>
+        </div>
         <div>
           <p style={{ fontWeight: "bold", fontSize: "22px" }}>{name}</p>
         </div>

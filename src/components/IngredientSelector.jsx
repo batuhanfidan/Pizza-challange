@@ -1,5 +1,5 @@
 import React from "react";
-import { FormGroup, Input, Label } from "reactstrap";
+import "./IngredientSelector.css";
 
 const ingredients = [
   "Pepperoni",
@@ -22,17 +22,32 @@ const IngredientSelector = ({
   handleIngredientChange,
 }) => {
   return (
-    <div className="secenekler">
-      {ingredients.map((ingredient) => (
-        <FormGroup check key={ingredient}>
-          <Input
+    <div className="seceneklerr">
+      {ingredients.map((ingredient, index) => (
+        <div className="ctnr" key={ingredient}>
+          <input
+            id={`cbx-${index}`}
+            className="hidden-xs-up"
             type="checkbox"
             value={ingredient}
             onChange={handleIngredientChange}
             checked={selectedIngredients.includes(ingredient)}
           />
-          <Label>{ingredient}</Label>
-        </FormGroup>
+          <label className="cbx-label" htmlFor={`cbx-${index}`}>
+            <span className="cbx"></span>
+            <p
+              style={{
+                fontFamily: "Barlow",
+                fontWeight: "700",
+                lineHeight: "28.8px",
+                color: "#5F5F5F",
+                margin: 0,
+              }}
+            >
+              {ingredient}
+            </p>
+          </label>
+        </div>
       ))}
     </div>
   );

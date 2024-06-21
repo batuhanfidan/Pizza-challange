@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
+import "./DoughSelector.css";
 
 function DoughSelector({ handleDoughChange }) {
+  const [doughSelected, setDoughSelected] = useState(false);
+
+  const handleSelectChange = (event) => {
+    handleDoughChange(event);
+    setDoughSelected(event.target.value !== "");
+  };
+
   return (
-    <div>
+    <div className="select-container">
       <div style={{ display: "flex", fontSize: "20px", fontWeight: "600" }}>
         <p>Hamur Seç</p>
         <p style={{ color: "red" }}>*</p>
@@ -10,10 +18,11 @@ function DoughSelector({ handleDoughChange }) {
       <select
         name="Hamur Kalınlığı"
         id="Hamur Kalınlığı"
-        onChange={handleDoughChange}
+        className="hamur"
+        onChange={handleSelectChange}
       >
         <option value="" disabled selected>
-          Hamur Kalınlığı
+          --Hamur Kalınlığı Seç--
         </option>
         {["İnce", "Orta", "Kalın"].map((dough) => (
           <option value={dough} key={dough}>
@@ -21,6 +30,11 @@ function DoughSelector({ handleDoughChange }) {
           </option>
         ))}
       </select>
+      {!doughSelected && (
+        <p style={{ color: "blue", color: "red", margin: "0" }}>
+          Lütfen bir malzeme seçiniz.*
+        </p>
+      )}
     </div>
   );
 }

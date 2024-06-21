@@ -13,10 +13,13 @@
     margin-top: 20px;
 }
 
+
+
 .order-container {
     width: 600px;
     height: 100vh;
     font-family: "Barlow";
+    margin-top: -50px;
 }
 
 .information{
@@ -80,13 +83,14 @@
 .tamamlandi {
     width: 386px;
     height: 197px;
-    border: 1px solid rgba(128, 128, 128, 0.521);
+    
     border-radius: 6px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
     padding: 50px;
+   background-color: #FAF7F2 ;
    
 }
 
@@ -109,10 +113,11 @@
 
 .not {
     width: 100%;
-    border: 1 px solid;
-    border-color: rgba(128, 128, 128, 0.295);
+    background-color:#FAF7F2;
     height: 56px;
     border-radius: 6px;
+    border: none;
+    
 }
 
 .dumduz {
@@ -122,14 +127,13 @@
 }
 
 .siparis-notu{
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .cizgi {
-    width: 30%;
-    border: 1px solid #FAF7F2;
-    margin-top: 20px;
-
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    margin-top: 50px;
 }
 
 .gereksiz {
