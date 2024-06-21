@@ -22,6 +22,7 @@ function MainOrder() {
   const [selectedIngredients, setSelectedIngredients] = useState([]);
   const [dough, setDough] = useState("");
   const [size, setSize] = useState("");
+  const [orderName, setOrderName] = useState("");
   const maxIngredients = 10;
   const minIngredients = 4;
 
@@ -51,11 +52,20 @@ function MainOrder() {
     setSize(e.target.value);
   };
 
+  const handleOrderNameChange = (e) => {
+    setOrderName(e.target.value);
+  };
+
   const totalPrice = (price + selectedIngredients.length * 5) * piece;
 
   const sendClick = () => {
     if (selectedIngredients.length < minIngredients) {
       alert(`En az ${minIngredients} malzeme seçmelisiniz.`);
+      return;
+    }
+
+    if (orderName.length < 3) {
+      alert("İsim en az 3 karakter uzunluğunda olmalıdır.");
       return;
     }
 
@@ -66,6 +76,7 @@ function MainOrder() {
       selectedIngredients: selectedIngredients,
       piece: piece,
       price: totalPrice,
+      orderName: orderName,
     };
 
     axios.post("https://reqres.in/api/pizza", obje).then((response) => {
@@ -77,7 +88,7 @@ function MainOrder() {
   return (
     <>
       <div className="gereksiz" style={{ width: "100%", height: "650px" }}>
-        <img src="Assets/mile2-aseets/pictures/form-banner.png" />
+        <img src="Assets/mile2-aseets/pictures/form-banner.png" alt="Banner" />
       </div>
       <div className="nasi" style={{ marginTop: "-280px" }}>
         <div className="order-container">
@@ -104,6 +115,17 @@ function MainOrder() {
             />
           </div>
           <div className="siparis-notu">
+            <input
+              type="text"
+              placeholder="İsim"
+              value={orderName}
+              onChange={handleOrderNameChange}
+              style={{
+                border: "1px solid gray",
+                marginBottom: "10px",
+                borderRadius: "5px",
+              }}
+            />
             <p>Sipariş Notu</p>
             <input
               type="text"
