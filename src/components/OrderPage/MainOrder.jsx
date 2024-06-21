@@ -64,6 +64,7 @@ function MainOrder() {
       size: size,
       dough: dough,
       selectedIngredients: selectedIngredients,
+      piece: piece,
       price: totalPrice,
     };
 
