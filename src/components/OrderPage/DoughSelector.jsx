@@ -32,7 +32,7 @@ function DoughSelector({ handleDoughChange }) {
       </select>
       {!doughSelected && (
         <p style={{ color: "blue", color: "red", margin: "0" }}>
-          Lütfen bir malzeme seçiniz.*
+          Lütfen bir kalınlık seçiniz.*
         </p>
       )}
     </div>

@@ -40,9 +40,7 @@ function SizeSelector({ handleSizeChange }) {
         ))}
       </div>
       {!sizeSelected && (
-        <p style={{ color: "red", margin: "0" }}>
-          Lütfen bir malzeme seçiniz.*
-        </p>
+        <p style={{ color: "red", margin: "0" }}>Lütfen bir boyut seçiniz.*</p>
       )}
     </div>
   );
