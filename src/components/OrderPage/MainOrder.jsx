@@ -5,6 +5,7 @@ import SizeSelector from "./SizeSelector";
 import DoughSelector from "./DoughSelector";
 import IngredientSelector from "../IngredientSelector";
 import OrderSummary from "./OrderSummary";
+import axios from "axios";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -57,14 +58,19 @@ function MainOrder() {
       alert(`En az ${minIngredients} malzeme seçmelisiniz.`);
       return;
     }
-    const ingredients = encodeURIComponent(JSON.stringify(selectedIngredients));
-    history.push(
-      `/OrderCompleted?totalPrice=${totalPrice}&name=${encodeURIComponent(
-        name
-      )}&dough=${encodeURIComponent(dough)}&size=${encodeURIComponent(
-        size
-      )}&ingredients=${ingredients}`
-    );
+
+    const obje = {
+      pizzaName: name,
+      size: size,
+      dough: dough,
+      selectedIngredients: selectedIngredients,
+      price: totalPrice,
+    };
+
+    axios.post("https://reqres.in/api/pizza", obje).then((response) => {
+      const encodedObje = encodeURIComponent(JSON.stringify(response.data));
+      history.push(`/OrderCompleted?obje=${encodedObje}`);
+    });
   };
 
   return (

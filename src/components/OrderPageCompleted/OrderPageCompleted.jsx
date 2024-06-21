@@ -1,18 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import "./OrderPageCompleted.css";
 import OrderSummary from "../OrderPage/OrderSummary";
+import axios from "axios";
 
 export default function OrderCompleted() {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
-  const totalPrice = parseFloat(queryParams.get("totalPrice")) || 0;
-  const pizzaName = decodeURIComponent(queryParams.get("name")) || "Pizza";
-  const dough = decodeURIComponent(queryParams.get("dough")) || "";
-  const size = decodeURIComponent(queryParams.get("size")) || "";
-  const ingredients =
-    JSON.parse(decodeURIComponent(queryParams.get("ingredients"))) || [];
+  const objeString = queryParams.get("obje");
 
+  let obje = null;
+
+  if (objeString) {
+    try {
+      obje = JSON.parse(decodeURIComponent(objeString));
+    } catch (e) {
+      console.error("Failed to parse obje:", e);
+    }
+  }
+
+  console.log(obje);
   return (
     <>
       <div className="order">
@@ -56,7 +63,7 @@ export default function OrderCompleted() {
                 lineHeight: "29.44px",
               }}
             >
-              {pizzaName}
+              {obje.pizzaName}
             </p>
           </div>
           <div
@@ -70,19 +77,20 @@ export default function OrderCompleted() {
             <p>
               Boyut:
               <span style={{ fontWeight: "600" }}>
-                {size} <span style={{ color: "red" }}>*</span>
+                {obje.size} <span style={{ color: "red" }}>*</span>
               </span>
             </p>
             <p>
               Hamur:
               <span style={{ fontWeight: "600" }}>
-                {dough} <span style={{ color: "red" }}>*</span>
+                {obje.dough} <span style={{ color: "red" }}>*</span>
               </span>
             </p>
             <p>
               Ek Malzemeler:{" "}
               <span style={{ fontWeight: "600" }}>
-                {ingredients.join(", ")} <span style={{ color: "red" }}>*</span>
+                {obje.selectedIngredients.join(", ")}{" "}
+                <span style={{ color: "red" }}>*</span>
               </span>{" "}
             </p>
           </div>
@@ -109,7 +117,7 @@ export default function OrderCompleted() {
               }}
             >
               <p>Seçimler: </p>
-              <p>{ingredients.length * 5}₺</p>
+              <p>{obje.selectedIngredients.length * 5}₺</p>
             </span>
             <span
               style={{
@@ -119,7 +127,7 @@ export default function OrderCompleted() {
               }}
             >
               <p>Total Price: </p>
-              <p>{totalPrice}₺</p>
+              <p>{obje.price}₺</p>
             </span>
           </div>
         </div>
