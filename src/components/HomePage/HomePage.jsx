@@ -10,6 +10,11 @@ export default function homePage() {
   const sendClick = () => {
     history.push("/OrderPage");
   };
+
+  const FoodClick = () => {
+    const windowHeight = window.innerHeight;
+    window.scrollBy(0, windowHeight * 1.8);
+  };
   return (
     <>
       <div className="main-container">
@@ -34,7 +39,7 @@ export default function homePage() {
           src="./Assets/mile1-assets/home-banner.png"
           className="main-image"
         />
-        <button onClick={sendClick} className="aciktim">
+        <button onClick={FoodClick} className="aciktim">
           ACIKTIM
         </button>
       </div>

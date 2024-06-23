@@ -83,15 +83,13 @@
 .tamamlandi {
     width: 386px;
     height: 197px;
-    
-    border-radius: 6px;
+    border-radius: 6px 6px 0px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
     padding: 50px;
-   background-color: #FAF7F2 ;
-   
+    background-color: #FAF7F2 ;
 }
 
 .tamamlandi div {
@@ -104,7 +102,7 @@
     width: 386px;
     height: 62px;
     border: none;
-    border-radius: 6px;
+    border-radius: 0px 0px 6px 6px;
     background-color: #FDC913;
     font-weight: 600;
     font-size: 16px;

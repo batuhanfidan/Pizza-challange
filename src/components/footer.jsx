@@ -20,11 +20,13 @@ function Footer() {
           >
             <img
               src="./Assets/mile2-aseets/footer/insta/logo-footer.svg"
-              style={{ width: "50%" }}
+              style={{ width: "50%", marginBottom: "30px" }}
             />
             <span>
               <img src="./Assets/mile2-aseets/footer/icons/icon-1.png" />
-              <p>341 Londonderry Road, Istanbul Türkiye</p>
+              <p style={{ width: "50%" }}>
+                341 Londonderry Road, Istanbul Türkiye
+              </p>
             </span>
             <span>
               <img src="./Assets/mile2-aseets/footer/icons/icon-2.png" />
