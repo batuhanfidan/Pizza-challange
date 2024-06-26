@@ -20,18 +20,7 @@ export default function homePage() {
       <div className="main-container">
         <img src="./Assets/mile1-assets/logo.svg" className="logo" />
         <div className="promp">
-          <p
-            style={{
-              fontFamily: "Satisfy",
-              color: "#FDC913",
-              fontSize: "32px",
-              height: "40px",
-              width: "50%",
-              lineHeight: "44.27px",
-            }}
-          >
-            fırsatı kaçırma
-          </p>
+          <p className="promp-first-p">fırsatı kaçırma</p>
           <p>KOD ACIKTIRIR</p>
           <p>PİZZA, DOYURUR</p>
         </div>

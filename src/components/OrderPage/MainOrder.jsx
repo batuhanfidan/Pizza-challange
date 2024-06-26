@@ -68,7 +68,7 @@ function MainOrder() {
       return;
     }
 
-    if (orderName.length < 3) {
+    if (orderName.length < minIngredients) {
       alert("İsim en az 3 karakter uzunluğunda olmalıdır.");
       return;
     }
@@ -91,20 +91,13 @@ function MainOrder() {
 
   return (
     <>
-      <div className="gereksiz" style={{ width: "100%", height: "580px" }}>
+      <div className="gereksiz">
         <img src="Assets/mile2-aseets/pictures/form-banner.png" alt="Banner" />
       </div>
-      <div className="nasi" style={{ marginTop: "-280px" }}>
+      <div className="nasi">
         <div className="order-container">
           <PizzaDetails price={price} name={name} />
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              width: "600px",
-              marginTop: "30px",
-            }}
-          >
+          <div className="dough-size">
             <SizeSelector handleSizeChange={handleSizeChange} />
             <DoughSelector handleDoughChange={handleDoughChange} />
           </div>

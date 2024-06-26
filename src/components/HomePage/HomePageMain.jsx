@@ -6,7 +6,10 @@ import { FaPizzaSlice } from "react-icons/fa";
 
 export default function HomePageMain({ sendClick }) {
   return (
-    <div style={{ height: "1743,75px", backgroundColor: "#FAF7F2" }}>
+    <div
+      className="contain"
+      style={{ height: "1743,75px", backgroundColor: "#FAF7F2" }}
+    >
       <div className="secenekler-div" style={{ backgroundColor: "white" }}>
         <div className="options">
           <span>
@@ -35,17 +38,10 @@ export default function HomePageMain({ sendClick }) {
           </span>
         </div>
       </div>
-      <div
-        id="uclu-foto"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          marginTop: "100px",
-        }}
-      >
+      <div id="uclu-foto">
         <div className="uclu-foto">
           <div className="uclu-foto-first">
-            <div style={{ width: "80%", padding: "50px" }}>
+            <div className="uclu-foto-first-child">
               <p
                 style={{
                   fontFamily: "Quattrocento",
@@ -72,18 +68,8 @@ export default function HomePageMain({ sendClick }) {
               <button onClick={sendClick}>SİPARİŞ VER</button>
             </div>
           </div>
-          <div
-            style={{
-              width: "50%",
-              display: "flex",
-              flexDirection: "column",
-              gap: "10px",
-            }}
-          >
-            <div
-              className="uclu-foto-second"
-              style={{ height: "50%", padding: "30px 0 0 40px" }}
-            >
+          <div className="uclu-foto-second-child">
+            <div className="uclu-foto-second">
               <div style={{ width: "40%" }}>
                 <p
                   style={{
@@ -99,10 +85,7 @@ export default function HomePageMain({ sendClick }) {
                 <button onClick={sendClick}>Sipariş Ver</button>
               </div>
             </div>
-            <div
-              className="uclu-foto-third"
-              style={{ height: "50%", padding: "30px 0 0 40px" }}
-            >
+            <div className="uclu-foto-third">
               <div style={{ width: "40%" }}>
                 <p
                   style={{
@@ -122,23 +105,12 @@ export default function HomePageMain({ sendClick }) {
           </div>
         </div>
       </div>
-      <div className="paketlenenler" style={{ marginTop: "100px" }}>
-        <div className="yazilar" style={{ width: "1296px" }}>
+      <div className="paketlenenler">
+        <div className="yazilar">
           <p>en çok paketlenen menüler</p>
-          <p
-            style={{
-              fontFamily: "Barlow",
-              fontWeight: "600",
-              fontSize: "42px",
-              lineHeight: "56.2px",
-              textAlign: "center",
-              color: "#292929",
-            }}
-          >
-            Acıktıran Kodlara Doyuran Lezzetler
-          </p>
+          <p className="yazilar-last">Acıktıran Kodlara Doyuran Lezzetler</p>
         </div>
-        <div className="paket-buton" style={{ width: "1296px" }}>
+        <div className="paket-buton">
           <button>
             <img src="./Assets/mile2-aseets/icons/1.svg" />
             <p>Ramen</p>

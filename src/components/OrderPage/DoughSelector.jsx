@@ -11,6 +11,7 @@ function DoughSelector({ handleDoughChange }) {
 
   return (
     <div
+      className="dough-first-div"
       style={{
         display: "flex",
         flexDirection: "column",

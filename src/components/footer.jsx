@@ -6,27 +6,15 @@ function Footer() {
   return (
     <div className="footer">
       <div className="footer-first-div">
-        <div
-          style={{
-            width: "50%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <div
-            className="adress"
-            style={{ width: "360px", height: "263.56px" }}
-          >
+        <div className="inside-div-footer">
+          <div className="adress">
             <img
+              className="adress-img"
               src="./Assets/mile2-aseets/footer/insta/logo-footer.svg"
-              style={{ width: "50%", marginBottom: "30px" }}
             />
             <span>
               <img src="./Assets/mile2-aseets/footer/icons/icon-1.png" />
-              <p style={{ width: "50%" }}>
-                341 Londonderry Road, Istanbul Türkiye
-              </p>
+              <p className="london">341 Londonderry Road, Istanbul Türkiye</p>
             </span>
             <span>
               <img src="./Assets/mile2-aseets/footer/icons/icon-2.png" />
@@ -56,7 +44,7 @@ function Footer() {
             <p>Position Absolute Acı Burger</p>
           </div>
         </div>
-        <div style={{ width: "50%" }} className="instagram-div">
+        <div className="instagram-div">
           <div className="instagram">
             <p>Instagram</p>
             <img src="./Assets/mile2-aseets/footer/insta/li-0.png" />

@@ -36,5 +36,13 @@
     background-color: #FFEECC; 
   }
   
+
+  @media(max-width:1000px) {
+    .dough-selector{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
   
   

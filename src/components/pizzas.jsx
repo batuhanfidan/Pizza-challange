@@ -28,6 +28,7 @@ const Pizzas = [
 export function PizzaItem({ image, name, puan, yorum, price }) {
   let history = useHistory();
   function sendClick() {
+    window.scrollTo(0, 0);
     const names = encodeURIComponent(name);
     history.push(`/OrderPage?price=${price}&name=${names}`);
   }

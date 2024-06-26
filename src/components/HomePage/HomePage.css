@@ -35,6 +35,15 @@
     align-items: center;
 }
 
+.promp-first-p {
+    font-family: "Satisfy";
+    color: #FDC913;
+    font-size: 32px;
+    height: 40px;
+    width: 50%;
+    line-height: 44.27px;
+}
+
 .promp p {
     margin: 0;
 }
@@ -53,3 +62,239 @@
     font-weight: bold;
 }
 
+@media (max-width: 1024px) {
+    .promp {
+        top: 30%;
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    .aciktim {
+        padding: 12px 50px;
+        font-size: 14px;
+    }
+
+    .options {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .uclu-foto {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .uclu-foto-first,
+    .uclu-foto-second,
+    .uclu-foto-third {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .secenekler-div {
+        font-size: 16px;
+    }
+
+    .uclu-foto {
+        height: auto;
+    }
+
+
+    .uclu-foto-second,
+    .uclu-foto-third {
+        width: 100%;
+        height: 300px;
+    }
+
+    .pizza {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pizza-item {
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .pizza-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-first-div {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .instagram, .adress, .footer-pizza-hot {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .instagram img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .instagram p {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .footer-pizza-hot p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .promp {
+        display: flex;
+        gap: 10px;
+        font-size: 40px;
+        line-height: 46px;
+    }
+    .aciktim{
+        margin-top: 50px;
+    }
+    .promp-first-p {
+        width: 100%;
+    }
+
+    .aciktim {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+
+    .secenekler-div {
+        font-size: 16px;
+    }
+
+    .uclu-foto {
+        height: auto;
+    }
+
+    
+
+    .pizza-item {
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .pizza-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .copyright {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .instagram, .adress, .footer-pizza-hot {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .instagram p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .footer-pizza-hot p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .promp {
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    .aciktim {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+
+    .secenekler-div {
+        font-size: 14px;
+    }
+
+    .uclu-foto {
+        height: auto;
+    }
+
+    .uclu-foto-first,
+    .uclu-foto-second,
+    .uclu-foto-third {
+        width: 100%;
+        height: 250px;
+    }
+
+    .pizza {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pizza-item {
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .pizza-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .copyright {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .instagram img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .instagram p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .footer-pizza-hot p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .adress span img {
+        height: 20px;
+    }
+    .main-container {
+        width: 100%;
+        height: 40%;
+    }
+    
+    
+}

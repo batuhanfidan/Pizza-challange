@@ -10,10 +10,8 @@
     display: flex;
     justify-content: center;
     height: 150vh;
-    margin-top: 20px;
+    margin-top: -280px
 }
-
-
 
 .order-container {
     width: 600px;
@@ -138,6 +136,8 @@
     background-color: #FAF7F2;
     display: flex;
     justify-content: center;
+    width: 100%;
+    height: 580px;
 }
 
 .gereksiz img {
@@ -147,3 +147,47 @@
     clip-path: inset(80px 0 0 0);
 }
 
+.dough-size{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    margin-top: 30px;
+}
+
+
+@media(max-width:1000px) {
+    .nasi{
+        width: 100%;
+        height: 210vh;
+        padding: 0 10px 0 10px;
+        margin-top: -350px;
+    }
+    .order-container {
+        width: 100%;
+    }
+    .gereksiz{
+        height: 600px;
+    }
+    .gereksiz img {
+        width: 100%;
+    }
+    .dough-size{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .onay-formu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .siparis-notu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header{
+        height: 100px;
+    }
+}

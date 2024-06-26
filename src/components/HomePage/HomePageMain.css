@@ -11,7 +11,6 @@
 
 .options {
     width: 1285px;
-    height: 42px;
     display: flex;
     justify-content: space-between;
 }
@@ -40,8 +39,9 @@
     background-image: url("../Assets/mile2-aseets/cta/kart-1.png");
     background-repeat: no-repeat;
     border-radius: 12px;
-    width: 636px; 
+    width: 49%; 
     height: 100%;
+    
 }
 
 .uclu-foto-second  {
@@ -49,6 +49,14 @@
     background-repeat: no-repeat;
     border-radius: 12px;
     background-size: 100% 100%;
+    height: 50%; 
+    padding: 30px 0 0 40px;
+}
+.uclu-foto-second-child{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .uclu-foto-third {
@@ -56,6 +64,8 @@
     background-repeat: no-repeat;
     border-radius: 12px;
     background-size: 100% 100%;
+    height: 50%; 
+    padding: 30px 0 0 40px;
 }
 
 .uclu-foto-first div button {
@@ -95,6 +105,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 100px;
+}
+
+.yazilar{
+    width: 1296px;
 }
 
 .yazilar:first-child{
@@ -106,10 +121,19 @@
     color: #CE2829;
 }
 
+.yazilar-last{
+    font-family: "Barlow";
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 56.2px;
+    text-align: center;
+    color: #292929;
+}
+
 .paket-buton {
     display: flex;
     justify-content: space-between;
-    
+    width: 1296px;
 }
 
 .paket-buton button {
@@ -168,6 +192,157 @@
     font-size: 22px;
     line-height: 29.44px;
 }
+.container{
+    height: 250vh;
+}
+
+.uclu-foto-first-child{
+    width: 80%; 
+    padding: 50px;
+}
+
+#uclu-foto{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
 
 
+@media (max-width: 768px) {
+    .secenekler-div {
+        font-size: 16px;
+    }
 
+    .uclu-foto {
+        height: auto;
+    }
+
+   
+    .uclu-foto-second,
+    .uclu-foto-third {
+        width: 100%;
+        height: 300px;
+    }
+
+    .pizza {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pizza-item {
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .pizza-image {
+        width: 100%;
+        height: auto;
+    }
+    .contain{
+        height: 305%;
+        padding: 0 10px 0 10px;
+    }
+    .paket-buton {
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+
+    .paket-buton button {
+        width: 100%;
+        height: 60px;
+    }
+
+    .paket-buton button p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .secenekler-div {
+        font-size: 14px;
+    }
+
+    .uclu-foto-second,
+    .uclu-foto-third {
+        height: 200px;
+    }
+
+    .pizza-item {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .pizza-image {
+        width: 100%;
+        height: auto;
+    }
+    .paket-buton {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 5px;
+        width: 100%;
+    }
+    .yazilar {
+        width: 100%;
+    }
+    .yazilar-last{
+        font-size: 25px;
+    }
+
+    .paket-buton button {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .paket-buton button p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    
+    .uclu-foto-second-child{
+        width: 100%;
+    }
+    .uclu-foto-second, .uclu-foto-third {
+        padding: 0 0 0 15px
+    }
+    .paketlenenler{
+        margin: 0;
+    }
+
+    .options{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 5px;
+        width: 100%;
+        margin-top: -42px;
+        margin: 50px 0 50px 0;
+    }
+    .uclu-foto-first{
+        width: 100%;
+        background-position: 50% 50%;
+    }
+
+    #uclu-foto{
+        margin-top: -5px;
+    }
+    .secenekler-div{
+        height: 200px;
+        display: flex;
+    }
+    .options span {
+        padding-left: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .uclu-foto-first-child {
+        padding: 50px 0 50px 20px ;
+    }
+    
+}

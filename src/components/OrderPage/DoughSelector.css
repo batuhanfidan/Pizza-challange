@@ -32,7 +32,18 @@
     pointer-events: none;
   }
   
- 
+  .dough-first-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @media (max-width:1000px) {
+    .dough-first-div{
+      display: flex;
+      align-items: center;
+    }
+  }
   
 
   

@@ -10,7 +10,7 @@ function SizeSelector({ handleSizeChange }) {
   };
 
   return (
-    <div>
+    <div className="dough-selector">
       <span>
         <p
           style={{
@@ -25,7 +25,7 @@ function SizeSelector({ handleSizeChange }) {
       </span>
       <div className="radio-inputs">
         {["S", "M", "L"].map((size) => (
-          <label key={size} className={`radio-label ${size.toLowerCase()}`}>
+          <label key={size} className={`radio-label `}>
             <input
               className="radio-input"
               type="radio"
