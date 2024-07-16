@@ -3,21 +3,21 @@ import { useHistory } from "react-router-dom";
 
 const Pizzas = [
   {
-    image: "Assets/mile2-aseets/pictures/food-1.png",
+    image: "https://i.hizliresim.com/kreox1y.png",
     name: "Terminal Pizza",
     puan: "4.9",
     yorum: "(200)",
     price: "60",
   },
   {
-    image: "Assets/mile2-aseets/pictures/food-2.png",
+    image: "https://i.hizliresim.com/ijdufg1.png",
     name: "Position Absolute Pizza",
     puan: "4.9",
     yorum: "(928)",
     price: "85",
   },
   {
-    image: "Assets/mile2-aseets/pictures/food-3.png",
+    image: "https://i.hizliresim.com/ix7tz2m.png",
     name: "useEffect Tavuklu Burger",
     puan: "4.9",
     yorum: "(462)",

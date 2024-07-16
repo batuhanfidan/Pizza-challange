@@ -1,6 +1,9 @@
 import React from "react";
 import "./footer.css";
 import { FaTwitter } from "react-icons/fa";
+import { IoLocationSharp } from "react-icons/io5";
+import { IoIosMailOpen } from "react-icons/io";
+import { FaPhoneVolume } from "react-icons/fa6";
 
 function Footer() {
   return (
@@ -10,18 +13,18 @@ function Footer() {
           <div className="adress">
             <img
               className="adress-img"
-              src="./Assets/mile2-aseets/footer/insta/logo-footer.svg"
+              src="https://fontmeme.com/temporary/85fabc5d05986f12e3ac5939324d79ab.png"
             />
             <span>
-              <img src="./Assets/mile2-aseets/footer/icons/icon-1.png" />
+              <IoLocationSharp style={{ width: "30px", height: "30px" }} />
               <p className="london">341 Londonderry Road, Istanbul Türkiye</p>
             </span>
             <span>
-              <img src="./Assets/mile2-aseets/footer/icons/icon-2.png" />
+              <IoIosMailOpen style={{ width: "30px", height: "30px" }} />
               <p>aciktim@teknolojikyemekler.com</p>
             </span>
             <span>
-              <img src="./Assets/mile2-aseets/footer/icons/icon-3.png" />
+              <FaPhoneVolume style={{ width: "30px", height: "30px" }} />
               <p>+90 216 123 45 67</p>
             </span>
           </div>
@@ -47,12 +50,12 @@ function Footer() {
         <div className="instagram-div">
           <div className="instagram">
             <p>Instagram</p>
-            <img src="./Assets/mile2-aseets/footer/insta/li-0.png" />
-            <img src="./Assets/mile2-aseets/footer/insta/li-1.png" />
-            <img src="./Assets/mile2-aseets/footer/insta/li-2.png" />
-            <img src="./Assets/mile2-aseets/footer/insta/li-3.png" />
-            <img src="./Assets/mile2-aseets/footer/insta/li-4.png" />
-            <img src="./Assets/mile2-aseets/footer/insta/li-5.png" />
+            <img src="https://i.hizliresim.com/se6xual.png" />
+            <img src="https://i.hizliresim.com/fkyi69m.png" />
+            <img src="https://i.hizliresim.com/od7tjg5.png" />
+            <img src="https://i.hizliresim.com/ied9vpj.png" />
+            <img src="https://i.hizliresim.com/c5r06qo.png" />
+            <img src="https://i.hizliresim.com/rvh2osv.png" />
           </div>
         </div>
       </div>
