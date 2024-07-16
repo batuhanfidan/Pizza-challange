@@ -92,7 +92,7 @@ function MainOrder() {
   return (
     <>
       <div className="gereksiz">
-        <img src="Assets/mile2-aseets/pictures/form-banner.png" alt="Banner" />
+        <img src="https://i.hizliresim.com/t9u5sdq.png" alt="Banner" />
       </div>
       <div className="nasi">
         <div className="order-container">

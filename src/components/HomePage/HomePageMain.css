@@ -13,6 +13,7 @@
     width: 1285px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .options span {
@@ -20,6 +21,7 @@
     justify-content: center;
     gap: 20px;
     width: 10rem;
+    align-items: center;
 }
 
 .secenekler span p {
@@ -36,7 +38,7 @@
 }
 
 .uclu-foto-first  {
-    background-image: url("../Assets/mile2-aseets/cta/kart-1.png");
+    background-image: url("https://i.hizliresim.com/hb4nroh.png");
     background-repeat: no-repeat;
     border-radius: 12px;
     width: 49%; 
@@ -45,7 +47,7 @@
 }
 
 .uclu-foto-second  {
-    background-image: url("../Assets/mile2-aseets/cta/kart-2.png");
+    background-image: url("https://i.hizliresim.com/227lxiu.png");
     background-repeat: no-repeat;
     border-radius: 12px;
     background-size: 100% 100%;
@@ -60,7 +62,7 @@
 }
 
 .uclu-foto-third {
-    background-image: url("../Assets/mile2-aseets/cta/kart-3.png");
+    background-image: url("https://i.hizliresim.com/cy3loe1.png");
     background-repeat: no-repeat;
     border-radius: 12px;
     background-size: 100% 100%;
