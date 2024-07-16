@@ -13,7 +13,7 @@ function Footer() {
           <div className="adress">
             <img
               className="adress-img"
-              src="https://fontmeme.com/temporary/85fabc5d05986f12e3ac5939324d79ab.png"
+              src="https://i.hizliresim.com/rm377e2.png"
             />
             <span>
               <IoLocationSharp style={{ width: "30px", height: "30px" }} />

@@ -24,7 +24,7 @@ export default function OrderCompleted() {
     <>
       <div className="order">
         <img
-          src="https://fontmeme.com/temporary/85fabc5d05986f12e3ac5939324d79ab.png"
+          src="https://i.hizliresim.com/sdot9qf.png"
           className="img"
           style={{ marginTop: "-50px" }}
         />

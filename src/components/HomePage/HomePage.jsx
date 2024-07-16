@@ -18,10 +18,7 @@ export default function homePage() {
   return (
     <>
       <div className="main-container">
-        <img
-          src="https://fontmeme.com/temporary/85fabc5d05986f12e3ac5939324d79ab.png"
-          className="logo"
-        />
+        <img src="https://i.hizliresim.com/sdot9qf.png" className="logo" />
         <div className="promp">
           <p className="promp-first-p">fırsatı kaçırma</p>
           <p>KOD ACIKTIRIR</p>
