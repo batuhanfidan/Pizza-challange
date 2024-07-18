@@ -4,6 +4,7 @@ import { FaTwitter } from "react-icons/fa";
 import { IoLocationSharp } from "react-icons/io5";
 import { IoIosMailOpen } from "react-icons/io";
 import { FaPhoneVolume } from "react-icons/fa6";
+import logo from "../../Assets/mile1-assets/logo.svg";
 
 function Footer() {
   return (
@@ -11,10 +12,7 @@ function Footer() {
       <div className="footer-first-div">
         <div className="inside-div-footer">
           <div className="adress">
-            <img
-              className="adress-img"
-              src="https://i.hizliresim.com/rm377e2.png"
-            />
+            <img className="adress-img" src={logo} />
             <span>
               <IoLocationSharp style={{ width: "30px", height: "30px" }} />
               <p className="london">341 Londonderry Road, Istanbul Türkiye</p>

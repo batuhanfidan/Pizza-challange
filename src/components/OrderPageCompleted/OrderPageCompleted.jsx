@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import "./OrderPageCompleted.css";
 import OrderSummary from "../OrderPage/OrderSummary";
 import axios from "axios";
+import logo from "../../../Assets/mile1-assets/logo.svg";
 
 export default function OrderCompleted() {
   const location = useLocation();
@@ -23,11 +24,7 @@ export default function OrderCompleted() {
   return (
     <>
       <div className="order">
-        <img
-          src="https://i.hizliresim.com/sdot9qf.png"
-          className="img"
-          style={{ marginTop: "-50px" }}
-        />
+        <img src={logo} className="img" style={{ marginTop: "-50px" }} />
         <div className="order_child">
           <div className="h1">
             <p

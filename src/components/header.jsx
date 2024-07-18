@@ -1,7 +1,9 @@
+import logo from "../../Assets/mile1-assets/logo.svg";
+
 function Header() {
   return (
     <div className="header">
-      <img src="https://i.hizliresim.com/rm377e2.png" alt="Logo" />
+      <img src={logo} alt="Logo" />
     </div>
   );
 }

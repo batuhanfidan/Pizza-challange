@@ -4,6 +4,7 @@ import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import Footer from "../footer";
 import HomePageMain from "./HomePageMain";
 import PizzaItem from "../pizzas";
+import logo from "../../../Assets/mile1-assets/logo.svg";
 
 export default function homePage() {
   let history = useHistory();
@@ -18,7 +19,7 @@ export default function homePage() {
   return (
     <>
       <div className="main-container">
-        <img src="https://i.hizliresim.com/sdot9qf.png" className="logo" />
+        <img src={logo} className="logo" />
         <div className="promp">
           <p className="promp-first-p">fırsatı kaçırma</p>
           <p>KOD ACIKTIRIR</p>
